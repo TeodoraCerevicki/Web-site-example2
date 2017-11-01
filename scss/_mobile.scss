@@ -1,0 +1,238 @@
+@import 'variables';
+
+* {
+    font-family: sans-serif;
+}
+body {
+    color: $black;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 90%;
+}
+
+// Navigation
+
+header {
+    background: $light-pink;
+}
+.main-nav {
+    display: none;
+}
+
+nav {
+    color: $black;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    
+    .burger {
+        cursor: pointer;
+        position: absolute;
+        left: 11px;
+    }
+    
+    i {
+        font-size: 22px;
+    }
+    
+    .logo h1{
+        font-size: 19px;
+        margin: -4px 0 0 21px;
+    }
+    
+    .account-nav i {
+        margin-left: 20px;
+        transition: color 0.1s;
+        &:hover {
+            color: $red;
+        }
+    }
+}
+
+
+// Slider
+
+.slider {
+    background: url('../img/cover.jpg') no-repeat;
+    background-size: cover;
+    padding: 10px 31px 10px 10px;
+    h1, a {
+        text-transform: uppercase;
+    }
+    a{
+        border: 1px solid $black;
+        border-radius: 2px;
+        display: inline-block;
+        font-size: 11px;
+        margin-bottom: 10px;
+        padding: 5px;
+        
+    }
+    p{
+        margin: 10px 0;
+    }
+}
+
+
+// Footer
+footer {
+    background: #222222;
+    color: $light-grey;
+    padding: 37px 0;
+    font-size: 14px;
+    h4 {
+        color: #fff;
+        font-size: 12px;
+        margin: 45px 0 25px 0;
+        text-transform: uppercase;
+    }  
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        margin-bottom: 25px;
+        text-transform: capitalize;
+    }
+    hr {
+        border: .3px solid $dark-grey;
+        margin: 40px 0;
+    }
+}
+
+.about-us {
+    a {
+        color: #fff;
+        font-size: 12px;
+        text-transform: uppercase;
+        transition: color .3s;
+        &:hover {
+            color: $red;
+        }
+    }// end of about us
+}
+
+.follow-social i {
+    background: $black;
+    border-radius: 50%;
+    margin-right: 8px;
+    padding-top: 13px;
+    height: 41px;
+    width: 41px;
+    text-align: center;
+    transition: background .4s;
+    &:hover {
+        background: $red;
+    }
+}
+    
+.info , .my-account{
+    li {
+        transition: transform .4s;
+        &:hover {
+            color: $red;
+            transform: translateX(10px);
+        }
+    }
+}
+
+.tags a{
+    background: #2e2e2e;
+    border-radius: 5px;
+    color: #545454;
+    display: inline-block;
+    flex-wrap: wrap;
+    margin-right: 10px;
+    padding: 9px 20px;
+    vertical-align: top;
+    &:hover {
+        color: #fff;
+    }
+}
+
+.bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    p {
+        text-transform: capitalize;
+    }
+    span {
+        color: #fff;
+    }
+}
+
+.paying-cards {
+    .pic {
+        background: $light-grey;
+        display: inline-block;
+        margin: 0 3px 5px 0;
+        width: 48px;
+        padding: 3px;
+        text-align: center;
+    }
+    img {
+        width: 70%;
+    }
+}
+
+
+
+
+
+// Main content
+
+//Sale
+
+.sale-post {
+    color: $black;
+    margin: 0 auto;
+    width: 90%;
+    h1 {
+        text-transform: uppercase;
+    }
+} 
+
+.post-one {
+    background: url('../img/img2.jpg') no-repeat;
+    background-size: cover;
+    margin: 20px 0;
+    padding: 55px 38px;
+    text-align: center;
+    transition: opacity .5s;
+    &:hover {
+        opacity: .6;
+    }
+}
+
+.post-two {
+    background: url('../img/shoes.jpg') no-repeat;
+    background-size: cover;
+    padding: 10% 20% 10% 10%;
+    transition: opacity .5s;
+    &:hover {
+        opacity: .6;
+    }
+    
+    h1{
+        font-size: 24px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,40 @@
+@import 'variables';
+
+nav {
+    .burger {
+        left: 24px;
+    }
+    .logo h1{
+        margin: -4px 0 0 21px;
+    }
+}
+
+.slider {
+    padding: 10px 229px 10px 10px;
+    a{
+        border: 3px solid $black;
+        font-size: 13px;
+        font-weight: bold;
+    }
+    p{
+        margin: 10px 0;
+    }
+}
+
+// Footer
+.info , .my-account {
+    display: inline-block;
+}
+
+.info {
+    margin-right: 182px;
+}
+
+// Main Content
+.post-one {
+    padding: 25%;
+}
+
+.post-two {
+    padding: 10% 64% 20% 10%;
+}

@@ -1,0 +1,78 @@
+@import 'variables';
+
+header {
+    background: url('../img/cover.jpg') no-repeat;
+    background-size: 100% 100%;
+    height: 640px;
+    
+    .logo h1{
+        margin: -4px 0 0 3px;
+    }
+}
+
+.main-nav {
+    display: inline-block;
+    li {
+        border-bottom: 2px solid transparent;
+        display: inline-block;
+        font-size: 14px;
+        font-weight: bold;
+        margin-left: 40px;
+        padding-bottom: 5px;
+        text-transform: uppercase;
+        transition: border-bottom 0.5s;
+        &:hover, &:active {
+            border-bottom: 2px solid $black;
+        }
+        .selected {
+            padding-bottom: 5px;
+            border-bottom: 2px solid $black;
+        }
+    }
+}
+
+nav {
+    .burger {
+        display: none;
+    } 
+}
+
+.slider {
+    background: transparent;
+    padding-left: 80px;
+}
+
+//Footer
+
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info {
+    margin-right: 0;
+}
+
+
+
+// Main content
+.sale-post {
+    display: flex;
+    width: 97%;
+}
+
+.post-one {
+    flex: 1;
+    padding: 96px 67px 90px;
+    max-width: 423px;
+    max-height: 315px;
+}
+
+.post-two {
+    background-size: 867px 315px;
+    flex: 2;
+    margin: 20px 0 20px 20px;
+    padding: 96px 500px 90px 67px;
+    max-width: 867px;
+    max-height: 315px;
+}
