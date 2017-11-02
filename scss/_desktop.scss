@@ -12,6 +12,10 @@ header {
 
 .main-nav {
     display: inline-block;
+    ul {
+        margin: 0 auto;
+        padding: 0 auto;
+    }
     li {
         border-bottom: 2px solid transparent;
         display: inline-block;
@@ -56,6 +60,8 @@ nav {
 
 
 // Main content
+
+// Sale post
 .sale-post {
     display: flex;
     width: 97%;
@@ -76,3 +82,20 @@ nav {
     max-width: 867px;
     max-height: 315px;
 }
+
+
+
+// Products
+
+
+
+
+
+
+
+
+
+
+
+
+
