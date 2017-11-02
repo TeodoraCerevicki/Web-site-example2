@@ -226,7 +226,7 @@ footer {
 
 
 .products {
-    margin: 90px 0;
+    margin: 90px auto;
     text-align: center;
     h2 {
         text-transform: uppercase;
@@ -252,12 +252,15 @@ footer {
     }
 } // end of products
 
+
 // Products post
 
 .products-post {
     cursor: pointer;
+    display: inline-block;
+    margin: 15px;
     position: relative;
-    width: 274px;
+    width: 90%;
     height: 465px;
     .circle, h3, .price, .sale-price, a {
         position: absolute;
@@ -353,12 +356,13 @@ footer {
 
 .flex-box {
     display: flex;
-    //flex-wrap: wrap;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .blog-post {
     color: $light-grey;
+    margin-bottom: 55px;
     position: relative;
     width: 270px;
     h4, a {
@@ -426,11 +430,12 @@ footer {
 form {
     border: 2px solid #ebebeb;
     display: flex;
+    flex-wrap: wrap;
     font-size: 12px;
     margin: 0 auto;
     margin-top: 55px;
     padding: 23px;
-    width: 618px;
+    width: 80%;
     input[type="email"] {
         border: none;
         flex: 2;
@@ -453,6 +458,7 @@ form {
 // Gallery 
 
 .gallery {
+    display: none;
     margin-bottom: 95px;
     position: relative;
     img {
@@ -487,20 +493,23 @@ form {
 // Back to top
 
 .back-to-top {
-    background: #ebebeb;
+    background: rgba(235, 235, 235, .7);
+    cursor: pointer;
     font-size: 12px;
     font-weight: bold;
     padding: 20px 22px;
     text-transform: uppercase;
     position: fixed;
     bottom: 62px;
-    right: 47px;
-    width: 152px;
-    height: 59px;
+    right: -10px;
     transform: rotateZ(270deg);
+    z-index: 999999;
     i {
         font-size: 18px;
         margin-left: 5px;
+    }
+    span {
+        display: none;
     }
 }
 

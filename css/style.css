@@ -188,7 +188,7 @@ footer {
     font-size: 24px; }
 
 .products {
-  margin: 90px 0;
+  margin: 90px auto;
   text-align: center; }
   .products h2 {
     text-transform: uppercase; }
@@ -210,8 +210,10 @@ footer {
 
 .products-post {
   cursor: pointer;
+  display: inline-block;
+  margin: 15px;
   position: relative;
-  width: 274px;
+  width: 90%;
   height: 465px; }
   .products-post .circle, .products-post h3, .products-post .price, .products-post .sale-price, .products-post a {
     position: absolute;
@@ -295,6 +297,9 @@ footer {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -302,6 +307,7 @@ footer {
 
 .blog-post {
   color: #9d9d9d;
+  margin-bottom: 55px;
   position: relative;
   width: 270px; }
   .blog-post h4, .blog-post a {
@@ -358,11 +364,14 @@ form {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   font-size: 12px;
   margin: 0 auto;
   margin-top: 55px;
   padding: 23px;
-  width: 618px; }
+  width: 80%; }
   form input[type="email"] {
     border: none;
     -webkit-box-flex: 2;
@@ -383,6 +392,7 @@ form {
       color: #da2424; }
 
 .gallery {
+  display: none;
   margin-bottom: 95px;
   position: relative; }
   .gallery img {
@@ -409,22 +419,24 @@ form {
       margin-right: 2px; }
 
 .back-to-top {
-  background: #ebebeb;
+  background: rgba(235, 235, 235, 0.7);
+  cursor: pointer;
   font-size: 12px;
   font-weight: bold;
   padding: 20px 22px;
   text-transform: uppercase;
   position: fixed;
   bottom: 62px;
-  right: 47px;
-  width: 152px;
-  height: 59px;
+  right: -10px;
   -webkit-transform: rotateZ(270deg);
   -ms-transform: rotate(270deg);
-  transform: rotateZ(270deg); }
+  transform: rotateZ(270deg);
+  z-index: 999999; }
   .back-to-top i {
     font-size: 18px;
     margin-left: 5px; }
+  .back-to-top span {
+    display: none; }
 
 @media screen and (min-width: 414px) {
   nav .burger {
@@ -454,7 +466,11 @@ form {
     .slider a {
       font-size: 19px; }
     .slider p {
-      margin: 32px 0; } }
+      margin: 32px 0; }
+  .products-post {
+    width: 40%; }
+  .back-to-top span {
+    display: inline; } }
 
 @media screen and (min-width: 922px) {
   header {
@@ -524,3 +540,15 @@ form {
     padding: 96px 500px 90px 67px;
     max-width: 867px;
     max-height: 315px; } }
+
+@media screen and (min-width: 1200px) {
+  .products-box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .gallery {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; } }
